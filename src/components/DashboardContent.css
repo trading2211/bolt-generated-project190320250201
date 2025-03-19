@@ -1,0 +1,123 @@
+.dashboard-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #1E1E2F;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.chart-container {
+  background-color: #2c2c3e;
+  border-radius: 8px;
+  padding: 0; /* Remove padding as the chart now has its own padding */
+  height: calc((100vh - 180px) / 2);
+  min-height: 250px;
+  overflow: hidden; /* Ensure no overflow outside container */
+}
+
+.additional-charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.loading-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 30, 47, 0.7);
+  z-index: 1000;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(122, 58, 234, 0.3);
+  border-radius: 50%;
+  border-top-color: #7A3AEA;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  background-color: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.metrics-info {
+  margin: 10px 0;
+}
+
+.metrics-info .panel {
+  background-color: #2c2c3e;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.metrics-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.metrics-info p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #94A3B8;
+}
+
+.metric-ids {
+  font-size: 13px;
+  color: #94A3B8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.filter-status {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 5px;
+}
+
+.filter-item {
+  display: inline-block;
+  background-color: rgba(122, 58, 234, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+  white-space: nowrap;
+}

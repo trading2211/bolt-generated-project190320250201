@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1E1E2F;
+  padding: 10px 0;
+}
+
+.header button {
+  background-color: rgba(67, 67, 84, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: rgba(77, 77, 94, 0.7);
+}
+
+.sign-out-button {
+  background-color: #ff4757 !important;
+}
+
+.sign-out-button:hover {
+  background-color: #ff6b6b !important;
+}
